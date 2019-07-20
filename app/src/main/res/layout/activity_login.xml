@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center"
+    android:background="@color/white"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:src="@drawable/logo6"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:hint="Email"
+
+        android:id="@+id/email"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:hint="Password"
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Log in"
+        android:id="@+id/login"
+
+        android:textColor="@color/white"
+        android:background="@color/blue"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account? Sign up"
+        android:id="@+id/txt_signup"
+        android:textColor="@color/purple"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/resetPassword"
+        android:layout_width="152dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Forgot Password"
+        android:gravity="center"
+
+        android:textSize="16dp"
+        android:fontFamily="serif"
+        android:textColor="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.811" />
+
+</LinearLayout>
